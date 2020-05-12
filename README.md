@@ -72,3 +72,9 @@ Build Log:
 
 Did:
   npx create-react-app first-redux-docker-app --template redux
+  git init
+
+created new repo on github
+Did:
+  git remote add origin https://github.com/jsmithb117/first-redux-docker-app.git
+  git push -u origin master
