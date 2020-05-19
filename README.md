@@ -82,21 +82,18 @@ Did:
 Following tutorial on how to dockerize the project from:
   https://mherman.org/blog/dockerizing-a-react-app/
   It's not very explicit.  It says 'Add a Dockerfile to the project root:'
-    What the fuck is a Dockerfile? is it just a file with the name Dockerfile with no extension?
-      "Here's how to make a Dockerfile: 'Make a Dockerfile'.  No fucking shit?!  Terrible...  If I already knew what a Dockerfile was, I wouldn't be following this tutorial.  It should say: 'Make a file named Dockerfile with no extension in the project root'.
-  Anyway, moving along...
+    What is a Dockerfile? is it just a file with the name Dockerfile with no extension?
   Made a file named 'Dockerfile' with no extension in the root project directory and populated it with the data on the tutorial.
   Made a file named '.dockerignore' in the root project directory and populated it with the data on the tutorial.
   Tried to follow instructions and ran 'docker build -t sample:dev .'
     Got error: Command 'docker' not found, but can be installed with:sudo apt install docker.io
-    This tutorial is fucking terrible.  I don't want this shit installed globally unless necessary.  Trying npm install with a --save-dev
     Did:
       npm install docker --save-dev
-    Once more, stupid fucking errors.  I don't want docker installed globally but I guess I don't have a choice.  It did say "Install Create React App globally:" at the beginning, so they do understand that you need software to be installed before doing this project, but apparently are so short sighted that they assume you've already installed Docker and know how to use it.  Once again, if I knew how to use it, I wouldn't be using this (terrible) tutorial.  Guess I'm installing it globally.
+    Once more, errors.  I don't want docker installed globally but I guess I don't have a choice.  It did say "Install Create React App globally:" at the beginning, so they do understand that you need software to be installed before doing this project, but apparently are so short sighted that they assume you've already installed Docker and know how to use it.  If I knew how to use it, I wouldn't be using this (terrible) tutorial.  Guess I'm installing it globally.
     Did:
       npm install -g docker
-        docker installed a bunch of deprecated software as dependencies.  I am NOT getting a warm and fuzzy about Docker.
-      docker build -t sample:dev .
+        docker installed a bunch of deprecated software as dependencies.
+      docker build -t sample:dev 
         It actually worked this time.
       Also installed the Docker extension for VSCode.  Who knows what that's going to do...
       Did:
@@ -110,9 +107,9 @@ Following tutorial on how to dockerize the project from:
           sample:dev
       I have no idea what that did, but it didn't return any errors.
         The docs show exactly what each line does but many of them have a 'you might get an error. We didn't feel like writing the docs so read this book on stackOverflow to find out why.
-          I went to the SO article and it's WAY over my head at this point.  I know almost nothing about Docker, which is why I'm using this shitty tutorial.
+          I went to the SO article and it's WAY over my head at this point.  I know almost nothing about Docker, which is why I'm using this tutorial.
   Following instructions, I went to http://localhost:3001/  in browser.  Response: This site can’t be reached
-    Why am I not surprised that this is not working?  It's because Docker seems to have garbage instructions, that's why.
+    Why am I not surprised that this is not working?
 
   Last entry:
-    Fuck Docker.  Maybe after I learn how to use Docker, I can come back and do this tutorial on how to use Docker...  Rating 0/7.
+    Maybe after I learn how to use Docker, I can come back and do this tutorial on how to use Docker...  Rating 0/7.
